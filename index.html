@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>House</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <a href="#" class="header__logo">
+      <img src="img/logo.svg" alt="logo">
+    </a>
+    <div class="header__content">
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list list-reset" data-menu>
+          <li class="nav__item"><a href="#" class="nav__link">Репродукции</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Новинки</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+        </ul>
+      </nav>
+      <button class="cart btn-reset">
+        <svg class="cart__icon">
+          <use xlink:href="img/sprite.svg#cart"></use>
+        </svg>
+        <span class="cart__quantity">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <section class="hero">
+  <div class="container hero__container">
+    <picture>
+      <source srcset="img/hero-img.webp" type="image/webp">
+      <img loading="lazy" src="img/hero-img.jpg" class="hero__img" width="540" height="621" alt="hero img">
+    </picture>
+    <div class="hero__content">
+      <h1 class="hero__title">
+        Реплики картин от <span>Ink. House</span>
+      </h1>
+      <p class="hero__text">
+        Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.
+      </p>
+      <button class="hero__btn btn-reset btn">
+        Продукция
+      </button>
+    </div>
+  </div>
+</section>
+      <section class="reproductions">
+  <div class="container reproductions__container">
+    <div class="reproductions__header">
+      <h2 class="reproductions__title">Репродукции</h2>
+      <ul class="reproductions__tabs list-reset">
+        <li class="reproductions__item">
+          <button class="reproductions__tab btn-reset reproductions__tab--active" data-tabs-path="france">
+            Франция
+          </button>
+        </li>
+        <li class="reproductions__item">
+          <button class="reproductions__tab btn-reset" data-tabs-path="germany">
+            Германия
+          </button>
+        </li>
+        <li class="reproductions__item">
+          <button class="reproductions__tab btn-reset" data-tabs-path="england">
+            Англия
+          </button>
+        </li>
+      </ul>
+    </div>
+    <ul class="reproductions__content reproductions__content--active list-reset" data-tabs-target="france">
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-1.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-1.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Марсель Руссо</span>
+          <h3 class="card__title">Охота Амура</h3>
+          <p class="card__info">Холст, масло (50×80) </p>
+          <span class="card__price">14 500 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-2.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-2.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Анри Селин</span>
+          <h3 class="card__title">Дама с собачкой</h3>
+          <p class="card__info">Акрил, бумага (50×80)</p>
+          <span class="card__price">16 500 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-3.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-3.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Франсуа Дюпон</span>
+          <h3 class="card__title">Процедура</h3>
+          <p class="card__info">Цветная литография (40×60)</p>
+          <span class="card__price">20 000 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-4.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-4.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Луи Детуш</span>
+          <h3 class="card__title">Роза</h3>
+          <p class="card__info">Бумага, акрил (50×80) </p>
+          <span class="card__price">12 000 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-5.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-5.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Франсуа Дюпон</span>
+          <h3 class="card__title">Птичья трапеза</h3>
+          <p class="card__info">Цветная литография (40×60) </p>
+          <span class="card__price">22 500 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-6.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-6.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Пьер Моранж</span>
+          <h3 class="card__title">Пейзаж с рыбой</h3>
+          <p class="card__info">Цветная литография (40×60) </p>
+          <span class="card__price">20 000 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+    </ul>
+    <ul class="reproductions__content list-reset" data-tabs-target="germany">
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-7.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-7.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Курт Вернер</span>
+          <h3 class="card__title">Над городом</h3>
+          <p class="card__info">Цветная литография (40×60) </p>
+          <span class="card__price">16 000 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-8.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-8.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Макс Рихтер</span>
+          <h3 class="card__title">Птенцы</h3>
+          <p class="card__info">Холст, масло (50×80) </p>
+          <span class="card__price">14 500 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-9.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-9.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Мартин Майер</span>
+          <h3 class="card__title">Среди листьев</h3>
+          <p class="card__info">Цветная литография (40×60) </p>
+          <span class="card__price">20 000 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-10.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-10.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Герман Беккер</span>
+          <h3 class="card__title">Яркая птица</h3>
+          <p class="card__info">Цветная литография (40×60) </p>
+          <span class="card__price">13 000 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-11.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-11.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Вульф Бауэр</span>
+          <h3 class="card__title">Дятлы</h3>
+          <p class="card__info">Бумага, акрил (50×80) </p>
+          <span class="card__price">20 000 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-12.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-12.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Вальтер Хартманн</span>
+          <h3 class="card__title">Большие воды</h3>
+          <p class="card__info">Бумага, акрил (50×80) </p>
+          <span class="card__price">23 000 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+    </ul>
+    <ul class="reproductions__content list-reset" data-tabs-target="england">
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-13.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-13.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Пол Смит</span>
+          <h3 class="card__title">Дикий зверь</h3>
+          <p class="card__info">Акварель, бумага (50×80) </p>
+          <span class="card__price">19 500 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-14.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-14.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Джон Уайт</span>
+          <h3 class="card__title">Скалистый берег</h3>
+          <p class="card__info">Цветная литография (40×60) </p>
+          <span class="card__price">17 500 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-15.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-15.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Джим Уотсон</span>
+          <h3 class="card__title">Река и горы</h3>
+          <p class="card__info">Акварель, бумага (50×80) </p>
+          <span class="card__price">20 500 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-16.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-16.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Юджин Зиллион</span>
+          <h3 class="card__title">Белый попугай</h3>
+          <p class="card__info">Цветная литография (40×60) </p>
+          <span class="card__price">15 500 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-17.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-17.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Эрик Гиллман</span>
+          <h3 class="card__title">Ночная рыба</h3>
+          <p class="card__info">Бумага, акрил (50×80) </p>
+          <span class="card__price">12 500 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+      <li class="reproductions__card">
+        <article class="card">
+          <picture>
+            <source srcset="img/card-img-18.webp" type="image/webp">
+            <img loading="lazy" src="img/card-img-18.jpg" class="card__img" width="310" height="422" alt="card img">
+          </picture>
+          <span class="card__name">Альфред Барр</span>
+          <h3 class="card__title">Рыжий кот</h3>
+          <p class="card__info">Цветная литография (40×60) </p>
+          <span class="card__price">21 000 руб</span>
+          <button class="card__btn btn-reset btn">В корзину</button>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="collection">
+  <div class="container">
+    <div class="collection__content">
+      <h2 class="collection__title collection__title--icon">
+        Новая коллекция французских авторов
+      </h2>
+      <div class="collection__info">
+        <p class="collection__text">
+          Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою
+          очередь,
+          должны быть заблокированы в рамках своих собственных рациональных ограничений.
+        </p>
+        <p class="collection__text">
+          Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность
+          направлений прогрессивного развития.
+        </p>
+      </div>
+      <button class="collection__btn btn-reset">
+        Ознакомиться
+      </button>
+    </div>
+  </div>
+</section>
+      <section class=" team">
+  <div class="container team__container">
+    <picture>
+      <source srcset="img/team-img.webp" type="image/webp">
+      <img loading="lazy" src="img/team-img.jpg" class="image" width="445" height="440" alt="team img">
+    </picture>
+    <div class="team__content">
+      <h2 class="team__title">
+        Наша команда
+      </h2>
+      <p class="team__text">
+        Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение
+        экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что
+        консультация с широким активом.
+      </p>
+      <ul class="team__list list-reset">
+        <li class="team__item">
+          <img src="img/team-img-1.jpg" alt="team avatar">
+        </li>
+        <li class="team__item">
+          <img src="img/team-img-2.jpg" alt="team avatar">
+        </li>
+        <li class="team__item">
+          <img src="img/team-img-3.jpg" alt="team avatar">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__col footer__col--left">
+      <a href="#" class="footer__logo">
+        <img src="img/logo.svg" alt="footer logo">
+      </a>
+      <a href="tel:+79995435454" class="footer__tel">
+        +7 999 543-54-54
+      </a>
+      <a href="#" class="footer__text">
+        Мастерская
+      </a>
+    </div>
+    <div class="footer__col footer__col--center">
+      <div class="footer__row">
+        <h2 class="footer__name">
+          Репродукции
+        </h2>
+        <ul class="footer__list list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__text">
+              Франция
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__text">
+              Германия
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__text">
+              Англия
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__row">
+        <h2 class="footer__name">
+          Новинки
+        </h2>
+        <ul class="footer__list list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__text">
+              2021
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__text">
+              2020
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__row">
+        <h2 class="footer__name">
+          О нас
+        </h2>
+        <ul class="footer__list list-reset">
+          <li class="footer__item">
+            <a href="#" class="footer__text">
+              Художники
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__text">
+              Менеджеры
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__col footer__col--right">
+      <ul class="footer-icon list-reset">
+        <li class="footer-icon__item">
+          <a href="#" class="footer-icon__link">
+            <svg class="footer-icon__svg">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon__item">
+          <a href="#" class="footer-icon__link">
+            <svg class="footer-icon__svg">
+              <use xlink:href="img/sprite.svg#inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon__item">
+          <a href="#" class="footer-icon__link">
+            <svg class="footer-icon__svg">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <span class="footer__ink">
+        Ink. House ® All rights reserved
+      </span>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
